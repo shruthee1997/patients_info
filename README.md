@@ -5,7 +5,7 @@ SampleApi is the demo project.
 The SampleApi runs across two containers:
 
 - **api** - a Python REST API which serves data CURD operation
-- **db** - a Postgres database that stores data
+- **db** - a Postgres database that stores patients Info
 
 ## Build and run in Docker Compose
 
