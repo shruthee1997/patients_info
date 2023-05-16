@@ -20,7 +20,7 @@ docker compose up --build
 Or you can pull pre-built images from Docker Hub using `docker compose pull`.
 
 NOTE:
--> Below comments to be ran in the server CLI:
+- Below comments to be ran in the server CLI:
     * Run create_db.py using the command (python create_db.py)
     * Run create_table.py using the command (python create_table.py)
     * Run insert_data.py using the command (python insert_data.py) - update the folder_path according to the work dir.
