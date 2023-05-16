@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+      - 8080:8080
+    tty: true
+    stdin_open: true
+    volumes:
+      - update path to project:/var/web/patient
+  db:
+    image: postgres:9.4.1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: patients
+    ports:
+      - 5431:5432
+    volumes:  
+      - pgdata1:/var/lib/postgresql/data
+      
+volumes:
+  pgdata1:
